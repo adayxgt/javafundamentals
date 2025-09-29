@@ -27,7 +27,7 @@ public class Airport {
 
 	}
 
-	private int getCounter() {
+	public int getCounter() {
 		return counter;
 	}
 

@@ -1,32 +1,26 @@
 package datastructure;
 
+import java.security.PrivateKey;
+
 public class ArrayTest {
 
 	public static void main(String[] args) {
 		//== operador de igualdad
 		// = operador de establecer un valor a una variable
-		System.out.println(1==1);
-		
-		
+		System.out.println(1==1);	
 				
-		int[] scores = {12, 123123, 435, 324};
-		int sum = scores[0] + scores[1] + scores[2] + scores[3];
-		System.out.println("t    he total score is" + sum);
-		int totalScore = 0;
-		for (int i = 0; i < scores.length; i++); {
-			int su = 324;
-			totalScore = scores[i] + totalScore;
-			System.out.println("the total score is" + totalScore);
-		}
-		System.out.println("the total score is" + totalScore);
+		int[] score = {12, 123123, 435};
+		
+		sumup(score);
+		findMaxMin(score);
 		//Un array
-		User[] clients = new User[2];
+		User[] clients = new User[4];
 		//Store a user object at the first position of the array
 		clients[0] = new User(0, "amno", "pas", false, 0);
 		//Store a user object at the second position of the array
 		clients[1] = new User(1, "amno", "pas", false, 0);
 		//Imprimir la longitud del array
-		System.out.println(scores.length);
+		System.out.println(score.length);
 		System.out.println("the length of the array clients " + clients.length);
 		
  		for (int i = 0; i < clients.length; i++) {
@@ -44,6 +38,41 @@ public class ArrayTest {
  		User[] users = {new User(), new User(0, "amno", "pas", false, 0)};
  		System.out.println(users.length);
  		System.out.println(users[2]);
+	}
+ 		
+ 		private static void findMaxMin(int[]score) {
+ 			int max = 5000000;
+ 			int min = score[score.length -1 ];
+ 			for (int i = 0; i < score.length; i++) {
+ 				/**
+ 				 * si 'max' es menor que el 
+ 				 * dato actual que hemos cogido
+ 				 * score[i] max = score [i]
+ 				 * 
+ 				 */
+// 				if (condition) {
+// 					statement;
+// 				}
+// 				else {
+// 					statement;
+// 				}
+ 				if (max < score [i]) {
+ 					max = score[i];
+ 				}
+ 				
+			}
+		System.out.println( "the maximun value is" + max);
+	}
+
+	private static void sumup(int[] score) {
+		int sum = score[0] + score[1] + score[2] ;
+		System.out.println("the total score is " + sum);
+		int totalScore = 0;
+		for (int i = 0; i < score.length; i++) {
+			totalScore = score[i] + totalScore;
+		}		
+		System.out.println("the total score is " + totalScore);
+		// TODO Auto-generated method stub
 		
 	}
 }
