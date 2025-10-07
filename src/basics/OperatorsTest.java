@@ -8,12 +8,41 @@ public class OperatorsTest {
 
 		arithmeticOperations();
 		arithmeticOperations();
-		arithmeticOperations();
-		arithmeticOperations();
+
+		logicalOperatorTest();
 
 		
 	}
 
+	
+	private static void logicalOperatorTest() {
+		// logical or || 
+		System.out.println("operator or");
+		System.out.println(true || true);
+		System.out.println(true || false);
+		System.out.println(false || true);
+		System.out.println(false || false);
+		
+		// logical and && significa y
+		System.out.println("operator and");
+		System.out.println(true && true);
+		System.out.println(true && false);
+		System.out.println(false && true);
+		System.out.println(false && false);
+	
+		boolean eyeClosed = false;
+		boolean breathSlow = true;
+		if(eyeClosed && breathSlow) {
+			System.out.println("is sleeping");
+		}
+		else {
+			System.out.println("not sleeping");
+		}	
+	}
+	
+	
+	
+	
 	private static void arithmeticOperations() {
 		// Declaring three variables of the same type
 		float num1 = 10, num2 = 20.234f, num3;
