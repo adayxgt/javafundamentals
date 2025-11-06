@@ -47,19 +47,19 @@ public class SearchingTest {
 
 	private static void searchingWitchMultipleThreads(String target, User[] clients) {
 		int index = clients.length / 4;
-		Thread thread1 =
-				new Thread(new UserSearchingTest(target, clients, 0, index));
-		Thread thread2 =
-				new Thread(new UserSearchingTest(target, clients, index, 2 * index));
-		Thread thread3 =
-				new Thread(new UserSearchingTest(target, clients, 2 * index, 3 * index));
-		Thread thread4 =
-				new Thread(new UserSearchingTest(target, clients, 3 * index, 4 * index));
-
-		thread1.start();
-		thread2.start();
-		thread3.start();
-		thread4.start();
+//		Thread thread1 =
+//				new Thread(new UserSearchingTest(target, clients, 0, index));
+//		Thread thread2 =
+//				new Thread(new UserSearchingTest(target, clients, index, 2 * index));
+//		Thread thread3 =
+//				new Thread(new UserSearchingTest(target, clients, 2 * index, 3 * index));
+//		Thread thread4 =
+//				new Thread(new UserSearchingTest(target, clients, 3 * index, 4 * index));
+//
+//		thread1.start();
+//		thread2.start();
+//		thread3.start();
+//		thread4.start();
 		int numOfThreads = Runtime.getRuntime().availableProcessors();
 		for (int i = 0; i < numOfThreads; i++) {
 			Thread thread5 =

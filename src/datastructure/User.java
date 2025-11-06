@@ -15,12 +15,18 @@ public class User {
 
 	/**
 	 * constructors
+	 * @param b 
+	 * @param j 
+	 * @param string3 
+	 * @param string2 
+	 * @param i 
+	 * @param string 
 	 */
-	public User() {
+	public User(String string, int i, String string2, String string3, int j, boolean b) {
 
 	}
 
-	public User(long id) {
+	public User() {
 		this.id = id;
 		
 
