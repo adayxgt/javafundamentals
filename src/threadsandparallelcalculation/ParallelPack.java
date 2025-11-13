@@ -1,4 +1,4 @@
-package threadparallelcalculation;
+package threadsandparallelcalculation;
 
 import java.util.concurrent.TimeUnit;
 
@@ -13,12 +13,10 @@ public class ParallelPack implements Runnable {
 
 	private Airport airport;
 
-public ParallelPack(Airport airport) {
-	this.airport = airport;
-	
-	
-	
-}
+	public ParallelPack(Airport airport) {
+		this.airport = airport;
+
+	}
 
 	/**	
 	 * * el metodo "run" es donde se define la tarea para un hilo
@@ -36,7 +34,7 @@ public ParallelPack(Airport airport) {
 			
 		for (int i = 0; i < 1000; i++) {
 			airport.decrease();
-			
+		}
 		} catch (InterruptedException e) {
 			e.printStackTrace();
 		}

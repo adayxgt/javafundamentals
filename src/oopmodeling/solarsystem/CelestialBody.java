@@ -80,5 +80,20 @@ public class CelestialBody {
 		this.age = age;
 	}
 	
+	public CelestialBody() {}
+	//constructor
+	public CelestialBody(String name) {
+		this.name = name;
+	}
+	/**
+	 * 
+	 * @param name
+	 * @param mass
+	 */
+	public CelestialBody(String name, double mass) {
+		this.name = name;
+		this.mass = mass;
+	}
+	
 	
 }
